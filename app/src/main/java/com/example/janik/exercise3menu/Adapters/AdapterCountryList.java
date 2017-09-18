@@ -43,11 +43,8 @@ public class AdapterCountryList extends ArrayAdapter<Country> {
 
         Country c = this.countries.get(position);
         twName.setText(c.getName());
-        String name = twName.getText().toString();
         twContinent.setText(c.getContinent());
-        String cont = twContinent.getText().toString();
         twCode.setText(c.getCode());
-        String code = twCode.getText().toString();
 
         return rowView;
     }
